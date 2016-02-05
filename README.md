@@ -22,4 +22,4 @@ Simple animations can be generated using pan.py and spin.py from any existing im
 
 Any suitable png can be displayed on your keyboard using 'display.py', by default it runs at 10 fps but this can be modified with a command line argument.
 
-`python pan.py ANIMATION_IMAGE_PATH [FPS]`
+`python display.py ANIMATION_IMAGE_PATH [FPS]`
