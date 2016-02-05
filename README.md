@@ -20,6 +20,13 @@ Simple animations can be generated using pan.py and spin.py from any existing im
 
 `python pan.py INPUT_IMAGE_PATH OUTPUT_IMAGE_PATH [FRAMES_IN_ANIMATION]`
 
-Any suitable png can be displayed on your keyboard using 'display.py', by default it runs at 10 fps but this can be modified with a command line argument.
+To convert a simple single image to a displayable layout simply use layout.py
+
+`python layout.py INPUT_IMAGE_PATH OUTPUT_IMAGE_PATH`
+
+Any suitable image can be displayed on your keyboard using 'display.py', by default it runs at 10 fps but this can be modified with a command line argument.
 
 `python display.py ANIMATION_IMAGE_PATH [FPS]`
+
+#Extension
+`layout.py` can be used to easily write animation producing scripts. The function `layout.create` takes in a single PIL Image object of any size, resizes it as necessary and returns a single numpy array representing the frame of the animation. For an example see `spin.py` and `pan.py`.
